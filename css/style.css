@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Utilities */
+
+/* Navbar */
+.navbar{
+    background: #111;
+    color: #fff;
+    padding: 20px 50px;
+}
+
+.navbarTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchNavbar{
+    display: flex;
+    align-items: center;
+    background: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.searchInput{
+    border: none;
+    background: transparent;
+}
+.searchInput::placeholder{
+    color: lightgray;
+}
+.searchInput:focus{
+    outline: none;
+}
+
+.searchIcon{
+    height: 20px;
+    width: 20px;
+}
+
+.limitedOffer{
+    border-bottom: 2px solid #369e62;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+.navbarBottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.menuItem{
+    color: lightgray;
+    cursor: pointer;
+    font-weight: 400;
+    margin-right: 5%;
+}
