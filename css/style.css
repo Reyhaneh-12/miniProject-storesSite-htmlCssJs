@@ -4,6 +4,10 @@
     font-family: 'Lato', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* Utilities */
 
 /* Navbar */
@@ -68,6 +72,7 @@
 .slider{
     background: url("../img/Brick.png") no-repeat center center/cover;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    overflow: hidden;
 }
 
 .sliderwrapper{
@@ -197,4 +202,83 @@
 .featureDesc{
     padding: 0 40px;
     color: gray;
+}
+
+
+/* Product */
+.product{
+    height: 100vh;
+    background: rgb(255, 245, 246);
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+    position: relative;
+}
+
+.productImg{
+    width: 45%;
+    padding-left: 2%;
+}
+
+.productDetails{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 50px;
+}
+
+.productTitle{
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.productPrice{
+    margin: 30px 0;
+}
+
+.productDesc{
+    font-size: 18px;
+    color: gray;
+    margin: 0 30px 30px 0;
+}
+
+.colors, .sizes{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.color{
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background: black;
+    cursor: pointer;
+}
+
+.color:nth-child(2){
+    background: darkblue;
+    margin-left: 10px;
+}
+
+.size{
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 5px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.productBtn{
+    font-size: 20px;
+    font-weight: 900;
+    background: black;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    float: right;
+    margin: 20px 40px 0 0;
+}
+
+.productBtn:hover{
+    background: #fff;
+    color: black;
 }
